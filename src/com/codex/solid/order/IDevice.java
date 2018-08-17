@@ -1,5 +1,5 @@
 package com.codex.solid.order;
 
-public interface IInventoryProcessor {
+public interface IDevice {
 	
 }
