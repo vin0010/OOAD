@@ -25,3 +25,7 @@ Data abstraction(implementation hiding)
 
 Single responsibility
     Object should be responsible for only one thing
+
+Delegation:
+    Don't get the data, ask the object that has the data to do the work for you.
+    
