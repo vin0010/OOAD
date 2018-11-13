@@ -14,4 +14,14 @@ Cohesion/coherence and coupling :
     Coupling : If one global variable is used by two objects, changing it in one place might affect other place too, avoid coupling as much as possible. Lot of things can go wrong when there are too much coupling in programming.
     Idea is to isolate the objects as muchh as possible to make it easier to maintain.
     Conclusion : Maximize Cohesion, minimize Coupling
-    
+    If tightly coupled, change becomes hard
+
+    Orthogonal(ity) : two things are orthogonal when changing one doesnt impact another
+
+Object should be like a black box, it should never expose whats its doing inside, you can only ask for help.
+
+Data abstraction(implementation hiding)
+    We do not know how objects works but we do know how to ask it to do something for us
+
+Single responsibility
+    Object should be responsible for only one thing
