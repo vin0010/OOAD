@@ -29,8 +29,22 @@ Single responsibility
 Delegation:
     Don't get the data, ask the object that has the data to do the work for you.
 
+
 You should be able to radically change the implementation of a class without impacting its clients.
     If my class is completely stand alone thing, I can change it the the it work at any time.
     How to think in such a way that objects are loosely coupled?
         How to write my system such a way that the above principle is followed properly? How to do this constant check?
+        Objects are like two spies are passing message in a park bench without seeing each other. One put the paper other take it and move away but never worried about who sends the message.
+        Even in future if the spy changes, another one will never care and only care about message and walk away.
+
         Think and add my thoughts here.
+
+
+
+
+
+
+
+TODO
+    bob martin clean code
+    
