@@ -29,6 +29,16 @@ Single responsibility
 Delegation:
     Don't get the data, ask the object that has the data to do the work for you.
 
+Getters and Setters are evil
+    They reveal too much information about your object work,
+
+Is-A relationship
+    If you feel A is B then A can extend B
+
+Template method pattern
+    Do most of the work in super class and let sub classes do their custom work. If some of the
+
+
 
 You should be able to radically change the implementation of a class without impacting its clients.
     If my class is completely stand alone thing, I can change it the the it work at any time.
@@ -47,4 +57,7 @@ You should be able to radically change the implementation of a class without imp
 
 TODO
     bob martin clean code
-    
+    see https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution
+    Difference between protected and private methods and when to use them
+    Broad leaf commerce
+    sprint features
