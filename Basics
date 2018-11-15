@@ -52,7 +52,9 @@ Template method pattern
             public Money getAmount due()
 
 
-
+Protected
+    the reason protected exist is for template methods
+    
 
 
 
