@@ -7,5 +7,6 @@ public class Organizers {
 		Player player = new AwayPlayer("Pollard", Category.ALLROUNDER, Designation.PLAYER);
 		team.addPlayer(player);
 		player.pay();
+		System.out.println(player.getContractAmount());
 	}
 }

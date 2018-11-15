@@ -21,7 +21,7 @@ abstract class Player {
 		System.out.println("Player : " + name + "\t paid Rs." + amount);
 	}
 
-	abstract public int getContractAmount();
+	abstract protected int getContractAmount();
 
 	public Category getCategory() {
 		return category;
