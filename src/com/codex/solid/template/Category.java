@@ -4,7 +4,5 @@ public enum Category {
 	BATSMEN,
 	BOWLER,
 	ALLROUNDER,
-	KEEPER,
-	CAPTAIN,
-	VICECAPTAIN
+	KEEPER
 }
