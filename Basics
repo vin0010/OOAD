@@ -20,6 +20,8 @@ Cohesion/coherence and coupling :
 
 Object should be like a black box, it should never expose whats its doing inside, you can only ask for help.
 
+All fields of a class should be private
+
 Data abstraction(implementation hiding)
     We do not know how objects works but we do know how to ask it to do something for us
 
@@ -54,7 +56,7 @@ Template method pattern
 
 Protected
     the reason protected exist is for template methods
-    
+
 
 
 
