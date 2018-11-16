@@ -16,6 +16,9 @@ Cohesion/coherence and coupling :
     Conclusion : Maximize Cohesion, minimize Coupling
     If tightly coupled, change becomes hard
 
+    Whenever you call one class from another class there is a potential cohesion problem, think deeply about it before moving.
+
+
     Orthogonal(ity) : two things are orthogonal when changing one doesnt impact another
 
 Object should be like a black box, it should never expose whats its doing inside, you can only ask for help.
@@ -30,7 +33,8 @@ Single responsibility
 
 Delegation:
     Don't get the data, ask the object that has the data to do the work for you.
-    
+
+
 
 Getters and Setters are evil
     They reveal too much information about your object work,
@@ -70,6 +74,8 @@ You should be able to radically change the implementation of a class without imp
 
         Think and add my thoughts here.
 
+LSP(Liskov Substitute principle)
+    Subtypes must be substitutes for their base types
 
 
 
@@ -77,6 +83,7 @@ You should be able to radically change the implementation of a class without imp
 
 
 TODO
+    Think how to implement what I have learnt
     bob martin clean code
     see https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution
     Difference between protected and private methods and when to use them

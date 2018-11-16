@@ -6,6 +6,9 @@ public abstract class Shape {
 	public void darken() {
 		System.out.println("darkened");
 	}
-
+	
+	public void render(Graphics g) {
+		draw(g);
+	}
 	abstract void draw(Graphics graphics);
 }
