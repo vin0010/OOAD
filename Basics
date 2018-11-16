@@ -30,6 +30,7 @@ Single responsibility
 
 Delegation:
     Don't get the data, ask the object that has the data to do the work for you.
+    
 
 Getters and Setters are evil
     They reveal too much information about your object work,
