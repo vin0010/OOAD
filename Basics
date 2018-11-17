@@ -50,7 +50,7 @@ Getters and Setters are evil
 Is-A relationship
     If you feel A is B then A can extend B
     Is a relationship make sense in english, but it doesnt necessairly make sense in java.
-    Make sure you think deep about all situations before making a class child of something. 
+    Make sure you think deep about all situations before making a class child of something.
 
 Template method pattern
     Do most of the work in super class and let sub classes do their custom work.
@@ -72,7 +72,14 @@ Template method pattern
 Protected
     the reason protected exist is for template methods
 
+Defining contract with interfaces
+    interface segregation principle
+        You should split up your interfaces such a way that you never have to implement something you can't.
+            Example
+                Worker(has pay() method) implemented by Employee and Contractor because both needs pa method.
+                The same cannot be done for volunteer since he shouldn't have pay method and you shouldn't throw not implemented exception.
 
+If you find yourself being forced to implement a method which you dot want and throw an exception, then its a bad design. 
 
 
 You should be able to radically change the implementation of a class without impacting its clients.
