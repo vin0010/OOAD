@@ -79,11 +79,14 @@ Defining contract with interfaces
                 Worker(has pay() method) implemented by Employee and Contractor because both needs pa method.
                 The same cannot be done for volunteer since he shouldn't have pay method and you shouldn't throw not implemented exception.
 
-If you find yourself being forced to implement a method which you dot want and throw an exception, then its a bad design. 
+Static class inside interfaces help us do extend default implementations
+    https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+    
+If you find yourself being forced to implement a method which you dot want and throw an exception, then its a bad design.
 
 
 You should be able to radically change the implementation of a class without impacting its clients.
-    If my class is completely stand alone thing, I can change it the the it work at any time.
+    If my class is completely stand alone thing, I can change it the it work at any time.
     How to think in such a way that objects are loosely coupled?
         How to write my system such a way that the above principle is followed properly? How to do this constant check?
         Objects are like two spies are passing message in a park bench without seeing each other. One put the paper other take it and move away but never worried about who sends the message.
@@ -91,6 +94,8 @@ You should be able to radically change the implementation of a class without imp
 
         Think and add my thoughts here.
 
+Nouns are great names for Classes
+adjectives are great names for interfaces
 LSP(Liskov Substitute principle)
     Subtypes must be substitutes for their base types
 
