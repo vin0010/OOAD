@@ -79,9 +79,13 @@ Defining contract with interfaces
                 Worker(has pay() method) implemented by Employee and Contractor because both needs pa method.
                 The same cannot be done for volunteer since he shouldn't have pay method and you shouldn't throw not implemented exception.
 
-Static class inside interfaces help us do extend default implementations
-    https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
-    
+    Static class inside interfaces help us do extend default implementations
+        https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+
+Default implementation(see above)
+    1. Interface subclass level - https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+    2. delegate level - https://github.com/vin0010/OOAD/blob/master/src/com/codex/solid/defaultimplementation/AnotherEmployee.java
+
 If you find yourself being forced to implement a method which you dot want and throw an exception, then its a bad design.
 
 
