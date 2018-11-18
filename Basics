@@ -108,6 +108,9 @@ Dependency inversion is different from dependency injection
 Dependency inversion:
     Dependency should be in proper direction
     https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/depenencyinversion
+    Whenever a class depends on(interacts with) only one object, its going to be difficult when another similar class introduced.
+    So its better to introduce dependency inversion and create a interface which is extended by that object and make a generic call to that object.
+    So dependency is reversed and maintance and changes required are less when new classes introduced as well.
 
 Ball and socket notation:
     ObjA -----------------------O)------------------------ObjB
@@ -116,7 +119,8 @@ Ball and socket notation:
     Payable - interface
         Extended by Employee and Contractors and Vendors
     AccountsPayable - Singleton class that has a method(paying) to take payable and pay it.
-    Inside payable get instance of AccountsPayable and do accountsPayable.paying(this) inside deafult implementation of payable. 
+    Inside payable get instance of AccountsPayable and do accountsPayable.paying(this) inside deafult implementation of payable.
+
 
 
 
