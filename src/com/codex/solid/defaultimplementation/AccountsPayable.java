@@ -3,7 +3,7 @@ package com.codex.solid.defaultimplementation;
 public class AccountsPayable implements AccountsPayableInterface {
 	private static AccountsPayable accountsPayable = new AccountsPayable();
 
-	static AccountsPayable getInstance() {
+	public static AccountsPayable getInstance() {
 		return accountsPayable;
 	}
 

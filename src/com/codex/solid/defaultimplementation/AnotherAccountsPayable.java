@@ -7,11 +7,4 @@ public class AnotherAccountsPayable implements AccountsPayableInterface {
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public AccountsPayableInterface getInstance() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }
