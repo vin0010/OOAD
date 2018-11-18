@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="com.codex.solid.defaultimplementation.AccountsPayable" project="OOAD" 
     file="/OOAD/src/com/codex/solid/defaultimplementation/AccountsPayable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="92" y="373"/>    
+    <position height="117" width="178" x="236" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="com.codex.solid.defaultimplementation.Contractor" project="OOAD" 
     file="/OOAD/src/com/codex/solid/defaultimplementation/Contractor.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="441" y="102"/>    
+    <position height="-1" width="-1" x="968" y="353"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="com.codex.solid.defaultimplementation.Payable.Implementation" project="OOAD" 
     file="/OOAD/src/com/codex/solid/defaultimplementation/Payable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="173" x="676" y="37"/>    
+    <position height="117" width="331" x="684" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <interface id="4" language="java" name="com.codex.solid.defaultimplementation.Payable" project="OOAD" 
     file="/OOAD/src/com/codex/solid/defaultimplementation/Payable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="173" x="676" y="343"/>    
+    <position height="-1" width="-1" x="479" y="581"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,43 +39,66 @@
   </interface>  
   <class id="5" language="java" name="com.codex.solid.defaultimplementation.Employee" project="OOAD" 
     file="/OOAD/src/com/codex/solid/defaultimplementation/Employee.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="135" y="171"/>    
+    <position height="-1" width="-1" x="109" y="266"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="6">    
-    <bendpoint x="685" y="176"/>    
+  <interface id="6" language="java" name="com.codex.solid.defaultimplementation.AccountsPayableInterface" project="OOAD" 
+    file="/OOAD/src/com/codex/solid/defaultimplementation/AccountsPayableInterface.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="476" y="283"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <realization id="7">    
+    <bendpoint x="693" y="204"/>    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <dependency id="7">    
+  <realization id="8">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="9">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="10" name="accountsPayableInterface"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="12">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <realization id="8">    
+  <realization id="13">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <generalization id="9">    
+  <generalization id="14">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <dependency id="10">    
+  <dependency id="15">    
+    <bendpoint x="245" y="204"/>    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <nesting id="11">    
-    <bendpoint x="706" y="176"/>    
+  <nesting id="16">    
+    <bendpoint x="714" y="204"/>    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </nesting>  
-  <association id="12">    
+  <association id="17">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="13" name="accountsPayable"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
+      <attribute id="18" name="accountsPayable"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
