@@ -128,7 +128,7 @@ Open closed principle
 
     Builder:
         Delegate the work of building to some one else.
-        
+
 How to avoid getters and Setters
 
 
