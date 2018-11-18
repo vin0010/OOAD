@@ -113,6 +113,10 @@ Ball and socket notation:
     ObjA -----------------------O)------------------------ObjB
                                ObjInterface
     Means ObjA is talking to ObjeB via ObjInterface
+    Payable - interface
+        Extended by Employee and Contractors and Vendors
+    AccountsPayable - Singleton class that has a method(paying) to take payable and pay it.
+    Inside payable get instance of AccountsPayable and do accountsPayable.paying(this) inside deafult implementation of payable. 
 
 
 
