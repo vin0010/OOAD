@@ -1,6 +1,5 @@
 package com.codex.solid.builder;
 
-import com.codex.solid.template.Category;
 
 public class MealBuilder {
 	public Meal buildMeal(MealCategory category) {

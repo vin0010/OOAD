@@ -2,7 +2,7 @@ package com.codex.solid.order;
 
 public abstract class IOrder {
 	// order does checkout cart, pay money and notify customer
-	private ICart cart;
+//	private ICart cart;
 	private IPaymentProcessor paymentProcessor;
 	private INotificationManager notificationManager;
 	private IPaymentDetails paymentDetails;
