@@ -122,6 +122,15 @@ Ball and socket notation:
     Inside payable get instance of AccountsPayable and do accountsPayable.paying(this) inside deafult implementation of payable.
 
 
+Open closed principle
+    Class should be Open for extension and closed for modification
+    Capabilities can be added to a class and should be closed for behavioral change.
+
+    Builder:
+        Delegate the work of building to some one else.
+        
+How to avoid getters and Setters
+
 
 
 
