@@ -109,6 +109,12 @@ Dependency inversion:
     Dependency should be in proper direction
     https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/depenencyinversion
 
+Ball and socket notation:
+    ObjA -----------------------O)------------------------ObjB
+                               ObjInterface
+    Means ObjA is talking to ObjeB via ObjInterface
+
+
 
 
 
