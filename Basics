@@ -146,7 +146,14 @@ Dependency injection
     Say for example a method named add create an object for Adder which requires DB connection object. For outsider we send two parameters without knowing its going to do DB operations inside.
     So when we write test cases, its going to fail for sure.
     By injecting related/required objects to our class constructor, we know exactly what are the objects to be mocked when we write test cases.
+    This is also helpful in mocking the code
 
+Summary
+    Four Golden rules for great code
+    1. Objects are defined by what they do, not what they contain
+    2. Must be able to replace the implementation without impacting the clients at any point of time
+        (Scope of change should be limited to one place)
+    3. 
 TODO
     Think how to implement what I have learnt
     bob martin clean code
@@ -154,3 +161,4 @@ TODO
     Difference between protected and private methods and when to use them
     Broad leaf commerce
     sprint features
+    Understand the difference between unit test and integration tests
