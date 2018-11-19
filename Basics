@@ -1,5 +1,8 @@
 #This file contains my observations and notes about OOAD.
 
+
+Learnings from https://www.pluralsight.com/courses/java-fundamentals-object-oriented-design
+
 Simplicity
     The code should do exactly what's necessary, nothing more
 
@@ -12,7 +15,7 @@ Design incrementally, Build incrementally(imagine constructing multiple houses i
 Cohesion/coherence and coupling :
     Cohesion : All public methods of a class form a cohesive group. They should be related to each other, no random methods should be grouped to form a class
     Coupling : If one global variable is used by two objects, changing it in one place might affect other place too, avoid coupling as much as possible. Lot of things can go wrong when there are too much coupling in programming.
-    Idea is to isolate the objects as muchh as possible to make it easier to maintain.
+    Idea is to isolate the objects as much as possible to make it easier to maintain.
     Conclusion : Maximize Cohesion, minimize Coupling
     If tightly coupled, change becomes hard
 
@@ -153,7 +156,9 @@ Summary
     1. Objects are defined by what they do, not what they contain
     2. Must be able to replace the implementation without impacting the clients at any point of time
         (Scope of change should be limited to one place)
-    3. 
+    3. Ask for help not for information(Delegation, we dont have to worry about getters and setters)
+    4. Prefer implements rather than extends
+
 TODO
     Think how to implement what I have learnt
     bob martin clean code
