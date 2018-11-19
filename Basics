@@ -95,6 +95,8 @@ You should be able to radically change the implementation of a class without imp
         How to write my system such a way that the above principle is followed properly? How to do this constant check?
         Objects are like two spies are passing message in a park bench without seeing each other. One put the paper other take it and move away but never worried about who sends the message.
         Even in future if the spy changes, another one will never care and only care about message and walk away.
+        To top it, changing classes shouldn't affect test cases as well.
+        If the change you made broke tests not related to your change, there is a serious functionality break to look out for.
 
         Think and add my thoughts here.
 
@@ -130,8 +132,11 @@ Open closed principle
         Delegate the work of building to some one else.
 
 How to avoid getters and Setters
-
-
+    If you use getters and setters, its very difficult to maintain the code when something changes.
+    More usage of getters and setters leads to disaster.
+    dog.getBody().gettail().wag();
+        In other words, when it comes to
+    if any of the method response is null or wrong, like a train wreck, everything else that precedes that will also break.
 
 
 
