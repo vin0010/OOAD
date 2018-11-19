@@ -138,7 +138,14 @@ How to avoid getters and Setters
         In other words, when it comes to
     if any of the method response is null or wrong, like a train wreck, everything else that precedes that will also break.
 
+Dependency injection
+    Finding how our objects interacting outside is easy, testing how our object using inside objects are difficult.
+    To solve this problem reverse the injection of objects are going to be the key.
 
+    In another perspective, when we do test driven development, its hard to manipulate things that happens inside a method.
+    Say for example a method named add create an object for Adder which requires DB connection object. For outsider we send two parameters without knowing its going to do DB operations inside.
+    So when we write test cases, its going to fail for sure.
+    By injecting related/required objects to our class constructor, we know exactly what are the objects to be mocked when we write test cases.
 
 TODO
     Think how to implement what I have learnt
