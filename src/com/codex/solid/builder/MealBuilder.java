@@ -1,6 +1,5 @@
 package com.codex.solid.builder;
 
-
 public class MealBuilder {
 	public Meal buildMeal(MealCategory category) {
 		Meal meal = null;
