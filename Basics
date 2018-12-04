@@ -159,6 +159,14 @@ Summary
     3. Ask for help not for information(Delegation, we dont have to worry about getters and setters)
     4. Prefer implements rather than extends
 
+
+
+Composition
+
+
+For any call to public method, catch exception, you never know what might be thrown back at you 
+
+
 TODO
     Think how to implement what I have learnt
     bob martin clean code

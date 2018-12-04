@@ -13,5 +13,6 @@ public class XMLExporter implements IMealExporter {
 		// TODO Auto-generated method stub
 
 	}
-
+	StringBuilder builder;
+	StringBuffer buffer;
 }

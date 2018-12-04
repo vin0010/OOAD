@@ -1,4 +1,4 @@
-package com.codex.adapter;
+package com.codex.patterns.adapter;
 
 public class AdapterExample {
 	public static void main(String args[]) {
