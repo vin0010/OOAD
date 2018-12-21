@@ -13,3 +13,11 @@
 - Idea is to isolate the objects as much as possible to make it easier to maintain.
 - Conclusion : Maximize Cohesion, minimize Coupling
 - If tightly coupled, change becomes hard
+- Whenever you call one class from another class there is a potential cohesion problem, think deeply about it before moving.
+- Orthogonal(ity) : two things are orthogonal when changing one doesn't impact another
+
+## Fragile base classes
+- Classes should be designed such a way that its change shouldn't affect its child in any way.
+- These kind of bugs are very hard to find and they show up exactly at runtime(at least use interfaces whenever you need extends).
+- Whenever possible stop using extends and go for implements. Also to make sure classes are not extended by some one, start using final for class declarations.
+- If you feel its dangerous to extend classes, make it final, if its necessary and some overriding some of the methods seems risky, make methods final so it cannot be overridden.
