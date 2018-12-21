@@ -21,3 +21,11 @@
 - These kind of bugs are very hard to find and they show up exactly at runtime(at least use interfaces whenever you need extends).
 - Whenever possible stop using extends and go for implements. Also to make sure classes are not extended by some one, start using final for class declarations.
 - If you feel its dangerous to extend classes, make it final, if its necessary and some overriding some of the methods seems risky, make methods final so it cannot be overridden.
+
+## Getters and Setters are evil
+- They reveal too much information about your object work
+
+## Is-A relationship
+- If you feel A is B then A can extend B
+- Is a relationship make sense in english, but it doesn't necessarily make sense in java.
+- Make sure you think deep about all situations before making a class child of something.
