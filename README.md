@@ -33,3 +33,17 @@
 ## Template method pattern
 - Do most of the work in super class and let sub classes do their custom work.
 - If some of the customization follows a pattern, keep an public method which uses abstract method inside super class and let others use it
+when sub classes extend super class they should implement that abstact method as well.
+   Example
+```
+    abstract Worker
+        public pay(){
+            Money m = getAmountDue(); // super class can talk to subclass without 'directly' talking
+            pay m;
+        }
+        abstact Money getAmountDue()
+    Employee extends Worker:
+        public Money getAmount due()
+    Contractor extends Worker:
+        public Money getAmount due()
+```
