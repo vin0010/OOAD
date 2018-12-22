@@ -29,3 +29,7 @@
 - If you feel A is B then A can extend B
 - Is a relationship make sense in english, but it doesn't necessarily make sense in java.
 - Make sure you think deep about all situations before making a class child of something.
+
+## Template method pattern
+- Do most of the work in super class and let sub classes do their custom work.
+- If some of the customization follows a pattern, keep an public method which uses abstract method inside super class and let others use it
