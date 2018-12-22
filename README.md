@@ -60,3 +60,7 @@ when sub classes extend super class they should implement that abstact method as
 
 - Static class inside interfaces help us do extend default implementations
         https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+
+# Default implementation(see above)
+- Interface subclass level - https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+- delegate level - https://github.com/vin0010/OOAD/blob/master/src/com/codex/solid/defaultimplementation/AnotherEmployee.java
