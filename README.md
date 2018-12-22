@@ -29,3 +29,38 @@
 - If you feel A is B then A can extend B
 - Is a relationship make sense in english, but it doesn't necessarily make sense in java.
 - Make sure you think deep about all situations before making a class child of something.
+
+## Template method pattern
+- Do most of the work in super class and let sub classes do their custom work.
+- If some of the customization follows a pattern, keep an public method which uses abstract method inside super class and let others use it
+when sub classes extend super class they should implement that abstact method as well.
+   Example
+```
+    abstract Worker
+        public pay(){
+            Money m = getAmountDue(); // super class can talk to subclass without 'directly' talking
+            pay m;
+        }
+        abstact Money getAmountDue()
+    Employee extends Worker:
+        public Money getAmount due()
+    Contractor extends Worker:
+        public Money getAmount due()
+```
+
+# Protected
+- the reason protected exist is for template methods
+
+# Defining contract with interfaces
+- interface segregation principle
+        You should split up your interfaces such a way that you never have to implement something you can't.
+            Example
+                Worker(has pay() method) implemented by Employee and Contractor because both needs pa method.
+                The same cannot be done for volunteer since he shouldn't have pay method and you shouldn't throw not implemented exception.
+
+- Static class inside interfaces help us do extend default implementations
+        https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+
+# Default implementation(see above)
+- Interface subclass level - https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
+- delegate level - https://github.com/vin0010/OOAD/blob/master/src/com/codex/solid/defaultimplementation/AnotherEmployee.java
