@@ -47,3 +47,16 @@ when sub classes extend super class they should implement that abstact method as
     Contractor extends Worker:
         public Money getAmount due()
 ```
+
+# Protected
+- the reason protected exist is for template methods
+
+# Defining contract with interfaces
+- interface segregation principle
+        You should split up your interfaces such a way that you never have to implement something you can't.
+            Example
+                Worker(has pay() method) implemented by Employee and Contractor because both needs pa method.
+                The same cannot be done for volunteer since he shouldn't have pay method and you shouldn't throw not implemented exception.
+
+- Static class inside interfaces help us do extend default implementations
+        https://github.com/vin0010/OOAD/tree/master/src/com/codex/solid/defaultimplementation
